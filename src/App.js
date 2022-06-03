@@ -38,22 +38,11 @@ const App = () => {
       });
       };
 
-    /*const GetData2 = () => {
-      fetch("http://localhost:3000/api/"+query)
-        .then(results => {
-          return results.json();
-        })
-        .then(data => {
-            const items = data;
-          setResults(items)
-        });
-    };*/
 
 
 
     const AddUser = () => {
-      /*tried to add user inputted data, but it never worked.
-      I tried something like http://localhost:3000/api/add?name="+name+"&email="+email but always only added the id while email and user were blank. Also tried other methods I found on the internet but they returned the same result also"*/
+     
       console.log(name+" "+email)
       fetch("http://localhost:3000/api/add", {
         method: 'POST'
